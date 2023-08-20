@@ -9,9 +9,6 @@ jobs:
   build:
     name: SonarCloud Code Analysis
     runs-on: ubuntu-latest
-    defaults:
-      run:
-        working-directory: ./android
     steps:
       - uses: actions/checkout@v3
         with:
@@ -37,4 +34,5 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # Needed to get PR information, if any
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
+        working-directory: ~/android
         run: ./gradlew build sonar --info
