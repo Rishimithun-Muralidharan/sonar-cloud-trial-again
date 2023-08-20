@@ -38,4 +38,4 @@ jobs:
         run: |
           cd android
 
-          ~/work/sonar-cloud-trial-again/sonar-cloud-trial-again/android/.gradlew sonar
+          ~/work/sonar-cloud-trial-again/sonar-cloud-trial-again/android/./gradlew sonar
