@@ -38,4 +38,4 @@ jobs:
         run: |
           cd android
 
-          ~/.gradlew sonar
+          /android/.gradlew sonar
